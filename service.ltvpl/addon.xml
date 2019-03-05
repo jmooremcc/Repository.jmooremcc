@@ -1,6 +1,8 @@
-<addon id="service.ltvpl" name="Live TV Playlist" provider-name="jmooremcc" version="0.9.17">
+<addon id="service.ltvpl" name="Live TV Playlist" provider-name="jmooremcc" version="0.9.18">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
+    <import addon="xbmc.json" version="7.0.0" />
+    <import addon="xbmc.gui" version="5.12.0" />
     <import addon="xbmc.addon" version="17.0.0" />
   </requires>
   <extension library="service.py" point="xbmc.service" />
@@ -15,7 +17,7 @@
       <item library="addon.py">
         <label lang="en_GB">Add To Live TV Playlist</label>
         <label lang="es_ES">Añadir a Live TV Playlist</label>
-        <visible>Window.IsVisible(tvguide)</visible>
+        <visible>Window.IsVisible(tvguide)|Window.IsVisible(tvsearch)</visible>
       </item>
     </menu>
   </extension>
