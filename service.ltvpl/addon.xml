@@ -1,4 +1,4 @@
-<addon id="service.ltvpl" name="Live TV Playlist" provider-name="jmooremcc" version="0.9.21">
+<addon id="service.ltvpl" name="Live TV Playlist" provider-name="jmooremcc" version="0.9.22">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="xbmc.json" version="7.0.0" />
@@ -48,6 +48,11 @@
       <screenshot>resources/screenshots/screenshot002.png</screenshot>
       <screenshot>resources/screenshots/screenshot003.png</screenshot>
       <screenshot>resources/screenshots/screenshot005.png</screenshot>
+      <screenshot>resources/screenshots/screenshot006.png</screenshot>
+      <screenshot>resources/screenshots/screenshot007.png</screenshot>
+      <screenshot>resources/screenshots/screenshot008.png</screenshot>
+      <screenshot>resources/screenshots/screenshot009.png</screenshot>
+      <screenshot>resources/screenshots/screenshot010.png</screenshot>
     </assets>
   </extension>
 </addon>
