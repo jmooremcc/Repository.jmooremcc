@@ -1,4 +1,4 @@
-<addon id="service.ltvpl" name="Live TV Playlist" provider-name="jmooremcc" version="0.9.22">
+<addon id="service.ltvpl" name="Live TV Playlist" provider-name="jmooremcc" version="0.9.23">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="xbmc.json" version="7.0.0" />
@@ -35,7 +35,7 @@
       Gerente de Live TV PlayList ofrece un servicio para que los clientes utilicen para programar eventos de TV en vivo. Una lista de reproducción de TV en vivo es una lista de instrucciones de cambio de canal que ocurren en un momento específico. Un elemento de lista de reproducción consiste en una hora de alarma, un canal y una opción de repetición. El administrador mantiene una base de datos de elementos de la lista de reproducción y guarda la lista en un archivo. Este archivo se lee cada vez que se inicia el administrador para que los eventos en curso siempre ocurran.
     </description>
     <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
     <website />
     <source />
     <forum />
