@@ -1,8 +1,7 @@
-<addon id="service.ltvpl" name="Live TV Playlist" provider-name="jmooremcc" version="0.9.32">
+<addon id="service.ltvpl" name="Live TV Playlist" provider-name="jmooremcc" version="0.9.33">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="xbmc.addon" version="17.0.0" />
-    <import addon="script.module.web-pdb" />
   </requires>
   <extension library="service.py" point="xbmc.service" />
   <extension library="resources/lib" point="xbmc.python.module" />
