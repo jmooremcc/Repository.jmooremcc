@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="service.ltvpl" name="Live TV Playlist" provider-name="jmooremcc" version="0.9.39">
+<addons><addon id="script.service.ltvpl" name="Live TV Playlist" provider-name="jmooremcc" version="0.9.40">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="xbmc.addon" version="17.0.0" />
@@ -8,7 +8,7 @@
   <extension library="resources/lib" point="xbmc.python.module" />
   <extension library="resources" point="xbmc.python.module" />
   <extension library="resources/enum" point="xbmc.python.module" />
-  <extension debugging="true" library="addon.py" point="xbmc.python.script">
+  <extension library="addon.py" point="xbmc.python.script">
     <provides>executable</provides>
   </extension>
   <extension point="kodi.context.item">
@@ -23,7 +23,7 @@
     <res aspect="16:9" default="true" folder="720p" height="720" width="1280" />
   </extension>
   <extension point="xbmc.addon.metadata">
-    <language />
+    <language>en es de</language>
     <summary lang="en_GB">Live TV Playlist Manager</summary>
     <summary lang="es_ES">Gerente de Lista de Reproducción de TV en Vivo</summary>
     <summary lang="de_DE">Manager für TV-Wiedergabelisten</summary>
@@ -38,9 +38,6 @@
     </description>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-    <website />
-    <source />
-    <forum />
     <email>jmooremcc@hotmail.com</email>
     <assets>
       <icon>icon.png</icon>
