@@ -1,4 +1,4 @@
-<addon id="script.service.ltvpl" name="Live TV Playlist" provider-name="jmooremcc" version="0.9.41">
+<addon id="script.service.ltvpl" name="Live TV Playlist" provider-name="jmooremcc" version="0.9.44">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="xbmc.addon" version="17.0.0" />
@@ -6,7 +6,6 @@
   <extension library="service.py" point="xbmc.service" />
   <extension library="resources/lib" point="xbmc.python.module" />
   <extension library="resources" point="xbmc.python.module" />
-  <extension library="resources/enum" point="xbmc.python.module" />
   <extension library="addon.py" point="xbmc.python.script">
     <provides>executable</provides>
   </extension>
@@ -37,6 +36,7 @@
     </description>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+    <source>https://github.com/jmooremcc/Live_TV_Playlist</source>
     <email>jmooremcc@hotmail.com</email>
     <assets>
       <icon>icon.png</icon>
