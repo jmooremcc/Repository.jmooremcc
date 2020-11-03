@@ -1,6 +1,8 @@
 [B][COLOR chartreuse]This file contains ALOT of useful information regarding the functionality of Super Favourites[CR]
 PLEASE READ IT!![/COLOR][/B]
 
+[COLOR chartreuse]1.0.60: 4 November 2020[/COLOR]
+    - Fixed launch problems when running under Kodi Leia
 
 [COLOR chartreuse]1.0.59: 29th May 2017[/COLOR]
     - 'Now playing' text now defined by SF due to skin variations
