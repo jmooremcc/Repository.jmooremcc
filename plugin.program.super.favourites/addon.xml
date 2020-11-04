@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.super.favourites" name="Super Favourites" version="1.0.60" provider-name="jmooremcc">
+<addon id="plugin.program.super.favourites" name="Super Favourites" version="1.0.61" provider-name="jmooremcc">
   <requires>
     <import addon="xbmc.python" version="2.26.0"/>
     <import addon="script.module.metahandler" optional="true" />

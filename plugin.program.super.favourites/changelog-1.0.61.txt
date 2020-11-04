@@ -1,7 +1,7 @@
 [B][COLOR chartreuse]This file contains ALOT of useful information regarding the functionality of Super Favourites[CR]
 PLEASE READ IT!![/COLOR][/B]
 
-[COLOR chartreuse]1.0.60: 4 November 2020[/COLOR]
+[COLOR chartreuse]1.0.61: 4 November 2020[/COLOR]
     - Fixed launch problems when running under Kodi Leia
 
 
