@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <addons>
-  <addon id="plugin.program.super.favourites" name="Super Favourites" provider-name="jmooremcc" version="2.0.0">
+  <addon id="plugin.program.super.favourites" name="Super Favourites" provider-name="jmooremcc" version="2.0.1">
     <requires>
       <import addon="xbmc.python" version="3.0.0" />
     </requires>
@@ -129,6 +129,7 @@
     </extension>
 
   </addon>
+
 
   <addon id="script.service.ltvpl" name="Live TV Playlist" provider-name="jmooremcc" version="1.0.1">
     <requires>
