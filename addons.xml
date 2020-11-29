@@ -26,6 +26,10 @@
       <source>https://github.com/jmooremcc/plugin.program.super.favourites</source>
       <email>seanpoyser at gmail.com</email>
       <email>jmooremcc at hotmail.com</email>
+      <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+      </assets>
 
       <news>
   2.0.0: 29 November 2020
@@ -123,6 +127,7 @@
       </menu>
     </extension>
   </addon>
+
 
   <addon id="script.service.ltvpl" name="Live TV Playlist" provider-name="jmooremcc" version="1.0.1">
     <requires>

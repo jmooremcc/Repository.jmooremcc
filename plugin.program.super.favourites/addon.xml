@@ -20,11 +20,15 @@
     <language>en</language>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
     <forum>http://forum.xbmc.org/showthread.php?tid=192662</forum>
-    <website></website>
+    <website />
     <source>https://github.com/spoyser/spoyser-repo/tree/master/plugin.program.super.favourites</source>
     <source>https://github.com/jmooremcc/plugin.program.super.favourites</source>
     <email>seanpoyser at gmail.com</email>
     <email>jmooremcc at hotmail.com</email>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
 
     <news>
 2.0.0: 29 November 2020
