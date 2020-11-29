@@ -65,6 +65,7 @@
 
       </menu>
     </extension>
+
   </addon>
 
   <addon id="plugin.program.super.favourites" name="Super Favourites" version="1.0.61" provider-name="jmooremcc">
@@ -126,8 +127,8 @@
 
       </menu>
     </extension>
- </addon>
 
+  </addon>
 
   <addon id="script.service.ltvpl" name="Live TV Playlist" provider-name="jmooremcc" version="1.0.1">
     <requires>
