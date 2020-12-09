@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.super.favourites" name="Super Favourites" version="2.0.1" provider-name="jmooremcc">
+<addon id="plugin.program.super.favourites" name="Super Favourites" version="2.0.2" provider-name="jmooremcc">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.metahandler" optional="true" />
   </requires>
 
 
