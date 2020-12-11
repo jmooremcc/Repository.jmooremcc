@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <addons>
-  <addon id="plugin.program.super.favourites" name="Super Favourites" version="2.0.2" provider-name="jmooremcc">
+  <addon id="plugin.program.super.favourites" name="Super Favourites" version="2.0.3" provider-name="jmooremcc">
     <requires>
       <import addon="xbmc.python" version="3.0.0" />
       <import addon="script.module.metahandler" optional="true" />
@@ -33,9 +33,8 @@
       </assets>
 
       <news>
-  2.0.2 9 December 2020
-        - Fix Icon and Fanart Choos Functionality
-        - Fix Internet Folder launch problem
+  2.0.3: 10 December 2020
+        - More Fixes for Network Folder Failure to Launch
 
   2.0.0: 29 November 2020
         - Matrix Version
@@ -72,9 +71,9 @@
     </extension>
   </addon>
 
-  <addon id="plugin.program.super.favourites" name="Super Favourites" version="1.0.62" provider-name="jmooremcc">
+  <addon id="plugin.program.super.favourites" name="Super Favourites" version="1.0.63" provider-name="jmooremcc">
     <requires>
-      <import addon="xbmc.python" version="2.26.0"/>
+      <import addon="xbmc.python" version="2.26.0" />
       <import addon="script.module.metahandler" optional="true" />
     </requires>
 
@@ -94,15 +93,15 @@
       <language>en</language>
       <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
       <forum>http://forum.xbmc.org/showthread.php?tid=192662</forum>
-      <website></website>
+      <website />
       <source>https://github.com/spoyser/spoyser-repo/tree/master/plugin.program.super.favourites</source>
       <source>https://github.com/jmooremcc/plugin.program.super.favourites</source>
       <email>seanpoyser at gmail.com</email>
       <email>jmooremcc at hotmail.com</email>
 
       <news>
-  1.0.62: 9 December 2020
-        - Fix Internet Folder Launch problem
+    1.0.63: 10 November 2020
+        - More Fixes to Network Folder Launch Failures
 
   1.0.60: 1 November 2020
       - Fixed launch issues in Kodi Leia
@@ -135,6 +134,7 @@
       </menu>
     </extension>
   </addon>
+
 
   <addon id="script.service.ltvpl" name="Live TV Playlist" provider-name="jmooremcc" version="1.0.1">
     <requires>
