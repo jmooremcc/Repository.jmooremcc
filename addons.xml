@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <addons>
-  <addon id="plugin.program.super.favourites" name="Super Favourites" version="1.0.64" provider-name="jmooremcc">
+  <addon id="plugin.program.super.favourites" name="Super Favourites" version="1.0.68" provider-name="jmooremcc">
     <requires>
       <import addon="xbmc.python" version="2.26.0" />
         <import addon="script.module.metahandler" optional="true" />
@@ -22,7 +22,7 @@
         <email>seanpoyser at gmail.com</email>
         <email>jmooremcc at hotmail.com</email>
         <news>
-  1.0.64: 12 November 2020
+1.0.68: 12 November 2020
       - More Fixes to Network Folder Launch Failures
 
 1.0.60: 1 November 2020
@@ -49,10 +49,9 @@
       </menu>
     </extension>
   </addon>
-  <addon id="plugin.program.super.favourites" name="Super Favourites" version="2.0.4" provider-name="jmooremcc">
+  <addon id="plugin.program.super.favourites" name="Super Favourites" version="2.0.5" provider-name="jmooremcc">
     <requires>
       <import addon="xbmc.python" version="3.0.0" />
-        <import addon="script.module.metahandler" optional="true" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
       <provides>video audio image executable</provides>
@@ -75,7 +74,7 @@
             <fanart>fanart.jpg</fanart>
       </assets>
         <news>
-2.0.4: 12 December 2020
+2.0.5: 12 December 2020
       - More Fixes for Network Folder Failure to Launch
 
 2.0.0: 29 November 2020

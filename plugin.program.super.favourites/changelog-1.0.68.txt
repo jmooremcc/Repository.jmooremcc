@@ -1,7 +1,7 @@
 [B][COLOR chartreuse]This file contains ALOT of useful information regarding the functionality of Super Favourites[CR]
 PLEASE READ IT!![/COLOR][/B]
 
-[COLOR chartreuse]1.0.64: 12 December 2020[/COLOR]
+[COLOR chartreuse]1.0.68: 12 December 2020[/COLOR]
     - More Fixes to launch folders problem from the internet
 
 [COLOR chartreuse]1.0.62: 9 December 2020[/COLOR]

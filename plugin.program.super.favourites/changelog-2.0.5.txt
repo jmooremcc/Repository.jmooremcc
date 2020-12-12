@@ -1,7 +1,7 @@
 [B][COLOR chartreuse]This file contains ALOT of useful information regarding the functionality of Super Favourites[CR]
 PLEASE READ IT!![/COLOR][/B]
 
-[COLOR chartreuse]2.0.4: 12 December 2020[/COLOR]
+[COLOR chartreuse]2.0.5: 12 December 2020[/COLOR]
     - More Fixes for Network Folder Failure to Launch
 
 [COLOR chartreuse]2.0.2: 9 December 2020[/COLOR]
