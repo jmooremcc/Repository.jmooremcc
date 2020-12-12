@@ -1,145 +1,114 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <addons>
-  <addon id="plugin.program.super.favourites" name="Super Favourites" version="2.0.3" provider-name="jmooremcc">
-    <requires>
-      <import addon="xbmc.python" version="3.0.0" />
-      <import addon="script.module.metahandler" optional="true" />
-    </requires>
-
-
-    <extension point="xbmc.python.pluginsource" library="default.py">
-          <provides>video audio image executable</provides>
-    </extension>
-
-
-    <extension point="xbmc.service" library="service.py" start="startup" />
-
-
-    <extension point="xbmc.addon.metadata">
-      <summary lang="en_GB">Put all your favourites bits of all your favourites addons into one easy to use addon.</summary>
-      <description lang="en_GB">Super Favourites is a better way of managing your Kodi Favourites.[CR][CR]Virtually any menu item within Kodi can be added to Super Favourites, even from addons that don't normally provide this feature.[CR][CR]Super Favourites allows you to better manage your Kodi favourites, including the creation of sub-folders, into which your Kodi favourites can then be copied or moved into.[CR][CR]This allows you to create you own custom addon with just the best bits of your favourite addons. Search your favourite addons, play your favourite music, read your favourite comic strips, select your favourite playlists, browse your favourite movies, listen to your favourite radio stations, watch your favourite cartoons, the possibilities are endless, all from within one easy to use addon.</description>
-      <platform>all</platform>
-      <language>en</language>
-      <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-      <forum>http://forum.xbmc.org/showthread.php?tid=192662</forum>
-      <website />
-      <source>https://github.com/spoyser/spoyser-repo/tree/master/plugin.program.super.favourites</source>
-      <source>https://github.com/jmooremcc/plugin.program.super.favourites</source>
-      <email>seanpoyser at gmail.com</email>
-      <email>jmooremcc at hotmail.com</email>
-      <assets>
-        <icon>icon.png</icon>
-        <fanart>fanart.jpg</fanart>
-      </assets>
-
-      <news>
-  2.0.3: 10 December 2020
-        - More Fixes for Network Folder Failure to Launch
-
-  2.0.0: 29 November 2020
-        - Matrix Version
-
-  1.0.60: 1 November 2020
-      - Fixed launch issues in Kodi Leia
-
-  1.0.59: 29th May 2017
-      - 'Now playing' text now defined by SF due to skin variations
-      </news>
-
-    </extension>
-
-
-    <extension point="kodi.context.item">
-      <menu id="kodi.core.main">
-
-        <item library="capture.py">
-          <label>$ADDON[plugin.program.super.favourites 30002]</label>
-          <visible>!IsEmpty(Window(Home).Property(SF_STD_CONTEXTMENU_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
-        </item>
-
-        <item library="menu_addtofaves.py">
-          <label>$ADDON[plugin.program.super.favourites 30047]</label>
-          <visible>!IsEmpty(Window(Home).Property(SF_STD_ADDTOFAVES_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
-        </item>
-
-        <item library="menu_download.py">
-          <label>$ADDON[plugin.program.super.favourites 30259]</label>
-          <visible>!IsEmpty(Window(Home).Property(SF_STD_DOWNLOAD_ENABLED)) + Player.IsInternetStream</visible>
-        </item>
-
-      </menu>
-    </extension>
-  </addon>
-
-  <addon id="plugin.program.super.favourites" name="Super Favourites" version="1.0.63" provider-name="jmooremcc">
+  <addon id="plugin.program.super.favourites" name="Super Favourites" version="1.0.64" provider-name="jmooremcc">
     <requires>
       <import addon="xbmc.python" version="2.26.0" />
-      <import addon="script.module.metahandler" optional="true" />
+        <import addon="script.module.metahandler" optional="true" />
     </requires>
-
-
     <extension point="xbmc.python.pluginsource" library="default.py">
-          <provides>video audio image executable</provides>
+      <provides>video audio image executable</provides>
     </extension>
-
-
     <extension point="xbmc.service" library="service.py" start="startup" />
-
-
     <extension point="xbmc.addon.metadata">
       <summary lang="en">Put all your favourites bits of all your favourites addons into one easy to use addon.</summary>
-      <description lang="en">Super Favourites is a better way of managing your Kodi Favourites.[CR][CR]Virtually any menu item within Kodi can be added to Super Favourites, even from addons that don't normally provide this feature.[CR][CR]Super Favourites allows you to better manage your Kodi favourites, including the creation of sub-folders, into which your Kodi favourites can then be copied or moved into.[CR][CR]This allows you to create you own custom addon with just the best bits of your favourite addons. Search your favourite addons, play your favourite music, read your favourite comic strips, select your favourite playlists, browse your favourite movies, listen to your favourite radio stations, watch your favourite cartoons, the possibilities are endless, all from within one easy to use addon.</description>
-      <platform>all</platform>
-      <language>en</language>
-      <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-      <forum>http://forum.xbmc.org/showthread.php?tid=192662</forum>
-      <website />
-      <source>https://github.com/spoyser/spoyser-repo/tree/master/plugin.program.super.favourites</source>
-      <source>https://github.com/jmooremcc/plugin.program.super.favourites</source>
-      <email>seanpoyser at gmail.com</email>
-      <email>jmooremcc at hotmail.com</email>
+        <description lang="en">Super Favourites is a better way of managing your Kodi Favourites.[CR][CR]Virtually any menu item within Kodi can be added to Super Favourites, even from addons that don't normally provide this feature.[CR][CR]Super Favourites allows you to better manage your Kodi favourites, including the creation of sub-folders, into which your Kodi favourites can then be copied or moved into.[CR][CR]This allows you to create you own custom addon with just the best bits of your favourite addons. Search your favourite addons, play your favourite music, read your favourite comic strips, select your favourite playlists, browse your favourite movies, listen to your favourite radio stations, watch your favourite cartoons, the possibilities are endless, all from within one easy to use addon.</description>
+        <platform>all</platform>
+        <language>en</language>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <forum>http://forum.xbmc.org/showthread.php?tid=192662</forum>
+        <website />
+        <source>https://github.com/spoyser/spoyser-repo/tree/master/plugin.program.super.favourites</source>
+        <source>https://github.com/jmooremcc/plugin.program.super.favourites</source>
+        <email>seanpoyser at gmail.com</email>
+        <email>jmooremcc at hotmail.com</email>
+        <news>
+  1.0.64: 12 November 2020
+      - More Fixes to Network Folder Launch Failures
 
-      <news>
-    1.0.63: 10 November 2020
-        - More Fixes to Network Folder Launch Failures
+1.0.60: 1 November 2020
+    - Fixed launch issues in Kodi Leia
 
-  1.0.60: 1 November 2020
-      - Fixed launch issues in Kodi Leia
-
-  1.0.59: 29th May 2017
-      - 'Now playing' text now defined by SF due to skin variations
-      </news>
-
+1.0.59: 29th May 2017
+    - 'Now playing' text now defined by SF due to skin variations
+    </news>
     </extension>
-
-
     <extension point="kodi.context.item">
       <menu id="kodi.core.main">
-
         <item library="capture.py">
           <label>$ADDON[plugin.program.super.favourites 30002]</label>
-          <visible>!IsEmpty(Window(Home).Property(SF_STD_CONTEXTMENU_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
+                <visible>!IsEmpty(Window(Home).Property(SF_STD_CONTEXTMENU_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
         </item>
-
-        <item library="menu_addtofaves.py">
+            <item library="menu_addtofaves.py">
           <label>$ADDON[plugin.program.super.favourites 30047]</label>
-          <visible>!IsEmpty(Window(Home).Property(SF_STD_ADDTOFAVES_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
+                <visible>!IsEmpty(Window(Home).Property(SF_STD_ADDTOFAVES_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
         </item>
-
-        <item library="menu_download.py">
+            <item library="menu_download.py">
           <label>$ADDON[plugin.program.super.favourites 30259]</label>
-          <visible>!IsEmpty(Window(Home).Property(SF_STD_DOWNLOAD_ENABLED)) + Player.IsInternetStream</visible>
+                <visible>!IsEmpty(Window(Home).Property(SF_STD_DOWNLOAD_ENABLED)) + Player.IsInternetStream</visible>
         </item>
-
       </menu>
     </extension>
   </addon>
+  <addon id="plugin.program.super.favourites" name="Super Favourites" version="2.0.4" provider-name="jmooremcc">
+    <requires>
+      <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.metahandler" optional="true" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+      <provides>video audio image executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+      <summary lang="en_GB">Put all your favourites bits of all your favourites addons into one easy to use addon.</summary>
+        <description lang="en_GB">Super Favourites is a better way of managing your Kodi Favourites.[CR][CR]Virtually any menu item within Kodi can be added to Super Favourites, even from addons that don't normally provide this feature.[CR][CR]Super Favourites allows you to better manage your Kodi favourites, including the creation of sub-folders, into which your Kodi favourites can then be copied or moved into.[CR][CR]This allows you to create you own custom addon with just the best bits of your favourite addons. Search your favourite addons, play your favourite music, read your favourite comic strips, select your favourite playlists, browse your favourite movies, listen to your favourite radio stations, watch your favourite cartoons, the possibilities are endless, all from within one easy to use addon.</description>
+        <platform>all</platform>
+        <language>en</language>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <forum>http://forum.xbmc.org/showthread.php?tid=192662</forum>
+        <website />
+        <source>https://github.com/spoyser/spoyser-repo/tree/master/plugin.program.super.favourites</source>
+        <source>https://github.com/jmooremcc/plugin.program.super.favourites</source>
+        <email>seanpoyser at gmail.com</email>
+        <email>jmooremcc at hotmail.com</email>
+        <assets>
+        <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+      </assets>
+        <news>
+2.0.4: 12 December 2020
+      - More Fixes for Network Folder Failure to Launch
 
+2.0.0: 29 November 2020
+      - Matrix Version
 
+1.0.60: 1 November 2020
+    - Fixed launch issues in Kodi Leia
+
+1.0.59: 29th May 2017
+    - 'Now playing' text now defined by SF due to skin variations
+    </news>
+    </extension>
+    <extension point="kodi.context.item">
+      <menu id="kodi.core.main">
+        <item library="capture.py">
+          <label>$ADDON[plugin.program.super.favourites 30002]</label>
+                <visible>!IsEmpty(Window(Home).Property(SF_STD_CONTEXTMENU_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
+        </item>
+            <item library="menu_addtofaves.py">
+          <label>$ADDON[plugin.program.super.favourites 30047]</label>
+                <visible>!IsEmpty(Window(Home).Property(SF_STD_ADDTOFAVES_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
+        </item>
+            <item library="menu_download.py">
+          <label>$ADDON[plugin.program.super.favourites 30259]</label>
+                <visible>!IsEmpty(Window(Home).Property(SF_STD_DOWNLOAD_ENABLED)) + Player.IsInternetStream</visible>
+        </item>
+      </menu>
+    </extension>
+  </addon>
   <addon id="script.service.ltvpl" name="Live TV Playlist" provider-name="jmooremcc" version="1.0.1">
     <requires>
       <import addon="xbmc.python" version="2.25.0" />
-      <import addon="xbmc.addon" version="17.0.0" />
+        <import addon="xbmc.addon" version="17.0.0" />
     </requires>
     <extension library="service.py" point="xbmc.service" />
     <extension library="resources/lib" point="xbmc.python.module" />
@@ -151,7 +120,7 @@
       <menu id="kodi.core.main">
         <item library="addon.py">
           <label>30090</label>
-          <visible>Window.IsVisible(tvguide)|Window.IsVisible(tvsearch)</visible>
+                <visible>Window.IsVisible(tvguide)|Window.IsVisible(tvsearch)</visible>
         </item>
       </menu>
     </extension>
@@ -160,35 +129,35 @@
     </extension>
     <extension point="xbmc.addon.metadata">
       <language>en es de</language>
-      <summary lang="en_GB">Live TV Playlist Manager</summary>
-      <summary lang="es_ES">Gerente de Lista de Reproducción de TV en Vivo</summary>
-      <summary lang="de_DE">Manager für TV-Wiedergabelisten</summary>
-      <description lang="en_GB">
-        The Live TV PlayList Manager provides a service for clients to use to schedule live TV events. A Live TV Playlist is a list of channel change instructions that occur at a specified time. A Playlist item consists of an alarm time, channel and recurrence option. The manager maintains a database of playlist items and saves the list in a file. This file is read each time the manager starts up so that on going events will always occur.
-      </description>
-      <description lang="es_ES">
-        Gerente de Lista de Reproducción de TV en Vivo ofrece un servicio para que los clientes utilicen para programar eventos de TV en vivo. Una lista de reproducción de TV en vivo es una lista de instrucciones de cambio de canal que ocurren en un momento específico. Un elemento de lista de reproducción consiste en una hora de alarma, un canal y una opción de repetición. El administrador mantiene una base de datos de elementos de la lista de reproducción y guarda la lista en un archivo. Este archivo se lee cada vez que se inicia el administrador para que los eventos en curso siempre ocurran.
-      </description>
-      <description lang="de_DE">
-        Der Manager für TV-Wiedergabelisten stellt einen Service für Clients zur Verfügung, um Fernsehsendungen zu planen. Eine Wiedergabeliste für TV-Programme ist eine Liste von Kanalwechselbefehlen, die zu einer bestimmten Zeit stattfinden. Ein Element der Wiedergabeliste besteht aus einer Alarmzeit, einem Kanal und einer Wiederholungsoption. Der Manager verwaltet eine Datenbank mit Wiedergabelistenelementen und speichert die Liste in einer Datei. Diese Datei wird bei jedem Start des Managers gelesen, so dass laufende Ereignisse ständig ausgeführt werden.
-      </description>
-      <platform>all</platform>
-      <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-      <source>https://github.com/jmooremcc/Live_TV_Playlist</source>
-      <email>jmooremcc@hotmail.com</email>
-      <assets>
+        <summary lang="en_GB">Live TV Playlist Manager</summary>
+        <summary lang="es_ES">Gerente de Lista de Reproducción de TV en Vivo</summary>
+        <summary lang="de_DE">Manager für TV-Wiedergabelisten</summary>
+        <description lang="en_GB">
+      The Live TV PlayList Manager provides a service for clients to use to schedule live TV events. A Live TV Playlist is a list of channel change instructions that occur at a specified time. A Playlist item consists of an alarm time, channel and recurrence option. The manager maintains a database of playlist items and saves the list in a file. This file is read each time the manager starts up so that on going events will always occur.
+    </description>
+        <description lang="es_ES">
+      Gerente de Lista de Reproducción de TV en Vivo ofrece un servicio para que los clientes utilicen para programar eventos de TV en vivo. Una lista de reproducción de TV en vivo es una lista de instrucciones de cambio de canal que ocurren en un momento específico. Un elemento de lista de reproducción consiste en una hora de alarma, un canal y una opción de repetición. El administrador mantiene una base de datos de elementos de la lista de reproducción y guarda la lista en un archivo. Este archivo se lee cada vez que se inicia el administrador para que los eventos en curso siempre ocurran.
+    </description>
+        <description lang="de_DE">
+      Der Manager für TV-Wiedergabelisten stellt einen Service für Clients zur Verfügung, um Fernsehsendungen zu planen. Eine Wiedergabeliste für TV-Programme ist eine Liste von Kanalwechselbefehlen, die zu einer bestimmten Zeit stattfinden. Ein Element der Wiedergabeliste besteht aus einer Alarmzeit, einem Kanal und einer Wiederholungsoption. Der Manager verwaltet eine Datenbank mit Wiedergabelistenelementen und speichert die Liste in einer Datei. Diese Datei wird bei jedem Start des Managers gelesen, so dass laufende Ereignisse ständig ausgeführt werden.
+    </description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+        <source>https://github.com/jmooremcc/Live_TV_Playlist</source>
+        <email>jmooremcc@hotmail.com</email>
+        <assets>
         <icon>icon.png</icon>
-        <fanart>fanart.jpg</fanart>
-        <screenshot>resources/screenshots/screenshot000.png</screenshot>
-        <screenshot>resources/screenshots/screenshot001.png</screenshot>
-        <screenshot>resources/screenshots/screenshot002.png</screenshot>
-        <screenshot>resources/screenshots/screenshot003.png</screenshot>
-        <screenshot>resources/screenshots/screenshot005.png</screenshot>
-        <screenshot>resources/screenshots/screenshot006.png</screenshot>
-        <screenshot>resources/screenshots/screenshot007.png</screenshot>
-        <screenshot>resources/screenshots/screenshot008.png</screenshot>
-        <screenshot>resources/screenshots/screenshot009.png</screenshot>
-        <screenshot>resources/screenshots/screenshot010.png</screenshot>
+            <fanart>fanart.jpg</fanart>
+            <screenshot>resources/screenshots/screenshot000.png</screenshot>
+            <screenshot>resources/screenshots/screenshot001.png</screenshot>
+            <screenshot>resources/screenshots/screenshot002.png</screenshot>
+            <screenshot>resources/screenshots/screenshot003.png</screenshot>
+            <screenshot>resources/screenshots/screenshot005.png</screenshot>
+            <screenshot>resources/screenshots/screenshot006.png</screenshot>
+            <screenshot>resources/screenshots/screenshot007.png</screenshot>
+            <screenshot>resources/screenshots/screenshot008.png</screenshot>
+            <screenshot>resources/screenshots/screenshot009.png</screenshot>
+            <screenshot>resources/screenshots/screenshot010.png</screenshot>
       </assets>
     </extension>
   </addon>
