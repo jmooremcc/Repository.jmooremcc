@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <addons>
-  <addon id="plugin.program.super.favourites" name="Super Favourites" version="1.0.68" provider-name="jmooremcc">
+  <addon id="plugin.program.super.favourites" name="Super Favourites" version="1.0.69" provider-name="jmooremcc, spoyser">
     <requires>
       <import addon="xbmc.python" version="2.26.0" />
         <import addon="script.module.metahandler" optional="true" />
@@ -22,6 +22,9 @@
         <email>seanpoyser at gmail.com</email>
         <email>jmooremcc at hotmail.com</email>
         <news>
+1.0.69: 11 January 2021
+      - Fixed local folder access and smb folder access
+
 1.0.68: 12 November 2020
       - More Fixes to Network Folder Launch Failures
 
@@ -49,7 +52,7 @@
       </menu>
     </extension>
   </addon>
-  <addon id="plugin.program.super.favourites" name="Super Favourites" version="2.0.5" provider-name="jmooremcc">
+  <addon id="plugin.program.super.favourites" name="Super Favourites" version="2.0.6" provider-name="jmooremcc, spoyser">
     <requires>
       <import addon="xbmc.python" version="3.0.0" />
     </requires>
@@ -74,6 +77,9 @@
             <fanart>fanart.jpg</fanart>
       </assets>
         <news>
+2.0.6: 11 January 2021
+      - Fixed access to local folders and smb folders
+
 2.0.5: 12 December 2020
       - More Fixes for Network Folder Failure to Launch
 
