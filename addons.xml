@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <addons>
-  <addon id="plugin.program.super.favourites" name="Super Favourites" version="1.0.69" provider-name="jmooremcc, spoyser">
+  <addon id="plugin.program.super.favourites" name="Super Favourites" version="1.0.70" provider-name="jmooremcc, spoyser">
     <requires>
       <import addon="xbmc.python" version="2.26.0" />
         <import addon="script.module.metahandler" optional="true" />
@@ -52,7 +52,7 @@
       </menu>
     </extension>
   </addon>
-  <addon id="plugin.program.super.favourites" name="Super Favourites" version="2.0.6" provider-name="jmooremcc, spoyser">
+  <addon id="plugin.program.super.favourites" name="Super Favourites" version="2.0.7" provider-name="jmooremcc, spoyser">
     <requires>
       <import addon="xbmc.python" version="3.0.0" />
     </requires>
