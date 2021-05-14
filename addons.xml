@@ -1,17 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <addons>
-  <addon id="plugin.program.super.favourites" name="Super Favourites" version="1.0.70" provider-name="jmooremcc, spoyser">
+  <addon id="plugin.program.super.favourites" name="Super Favourites" version="2.0.8" provider-name="jmooremcc, spoyser">
     <requires>
-      <import addon="xbmc.python" version="2.26.0" />
-        <import addon="script.module.metahandler" optional="true" />
+      <import addon="xbmc.python" version="3.0.0" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
       <provides>video audio image executable</provides>
     </extension>
     <extension point="xbmc.service" library="service.py" start="startup" />
     <extension point="xbmc.addon.metadata">
-      <summary lang="en">Put all your favourites bits of all your favourites addons into one easy to use addon.</summary>
-        <description lang="en">Super Favourites is a better way of managing your Kodi Favourites.[CR][CR]Virtually any menu item within Kodi can be added to Super Favourites, even from addons that don't normally provide this feature.[CR][CR]Super Favourites allows you to better manage your Kodi favourites, including the creation of sub-folders, into which your Kodi favourites can then be copied or moved into.[CR][CR]This allows you to create you own custom addon with just the best bits of your favourite addons. Search your favourite addons, play your favourite music, read your favourite comic strips, select your favourite playlists, browse your favourite movies, listen to your favourite radio stations, watch your favourite cartoons, the possibilities are endless, all from within one easy to use addon.</description>
+      <summary lang="en_GB">Put all your favourites bits of all your favourites addons into one easy to use addon.</summary>
+        <description lang="en_GB">Super Favourites is a better way of managing your Kodi Favourites.[CR][CR]Virtually any menu item within Kodi can be added to Super Favourites, even from addons that don't normally provide this feature.[CR][CR]Super Favourites allows you to better manage your Kodi favourites, including the creation of sub-folders, into which your Kodi favourites can then be copied or moved into.[CR][CR]This allows you to create you own custom addon with just the best bits of your favourite addons. Search your favourite addons, play your favourite music, read your favourite comic strips, select your favourite playlists, browse your favourite movies, listen to your favourite radio stations, watch your favourite cartoons, the possibilities are endless, all from within one easy to use addon.</description>
         <platform>all</platform>
         <language>en</language>
         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
@@ -21,12 +20,26 @@
         <source>https://github.com/jmooremcc/plugin.program.super.favourites</source>
         <email>seanpoyser at gmail.com</email>
         <email>jmooremcc at hotmail.com</email>
+        <assets>
+        <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+      </assets>
         <news>
-1.0.69: 11 January 2021
-      - Fixed local folder access and smb folder access
+2.0.8: 14 May 2021
+      - Fixed various incompatibilities with latest version of Matrix involving decode('utf-8')
+        that caused crashes.
 
-1.0.68: 12 November 2020
-      - More Fixes to Network Folder Launch Failures
+2.0.7: 17 February 2021
+    - Fixed remote folder access via another plugin
+
+2.0.6: 11 January 2021
+      - Fixed access to local folders and smb folders
+
+2.0.5: 12 December 2020
+      - More Fixes for Network Folder Failure to Launch
+
+2.0.0: 29 November 2020
+      - Matrix Version
 
 1.0.60: 1 November 2020
     - Fixed launch issues in Kodi Leia
@@ -52,7 +65,7 @@
       </menu>
     </extension>
   </addon>
-  <addon id="plugin.program.super.favourites" name="Super Favourites" version="2.0.7" provider-name="jmooremcc, spoyser">
+  <addon id="plugin.program.super.favourites" name="Super Favourites" version="2.0.8" provider-name="jmooremcc, spoyser">
     <requires>
       <import addon="xbmc.python" version="3.0.0" />
     </requires>
@@ -77,6 +90,13 @@
             <fanart>fanart.jpg</fanart>
       </assets>
         <news>
+2.0.8: 14 May 2021
+      - Fixed various incompatibilities with latest version of Matrix involving decode('utf-8')
+        that caused crashes.
+
+2.0.7: 17 February 2021
+    - Fixed remote folder access via another plugin
+
 2.0.6: 11 January 2021
       - Fixed access to local folders and smb folders
 
