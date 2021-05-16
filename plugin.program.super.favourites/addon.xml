@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.super.favourites" name="Super Favourites" version="2.0.8" provider-name="jmooremcc, spoyser">
+<addon id="plugin.program.super.favourites" name="Super Favourites" version="2.0.9" provider-name="jmooremcc, spoyser">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
   </requires>
@@ -31,6 +31,10 @@
     </assets>
 
     <news>
+2.0.9: 15 May 2021
+      - Fixed bug in Player.def activateWindowCommand(cmd) that was messing up the ability
+        to return from child direrctories
+
 2.0.8: 14 May 2021
       - Fixed various incompatibilities with latest version of Matrix involving decode('utf-8')
         that caused crashes.
