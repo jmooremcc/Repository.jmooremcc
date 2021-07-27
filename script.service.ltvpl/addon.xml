@@ -1,10 +1,8 @@
-<addon id="script.service.ltvpl" name="Live TV Playlist" provider-name="jmooremcc" version="1.0.1">
-  <requires>
-    <import addon="xbmc.python" version="2.25.0" />
-    <import addon="xbmc.addon" version="17.0.0" />
-  </requires>
+<addon id="script.service.ltvpl" name="Live TV Playlist" provider-name="jmooremcc" version="2.0.1">
   <extension library="service.py" point="xbmc.service" />
-  <extension library="resources/lib" point="xbmc.python.module" />
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+  </requires>
   <extension library="resources" point="xbmc.python.module" />
   <extension library="addon.py" point="xbmc.python.script">
     <provides>executable</provides>
@@ -16,9 +14,6 @@
         <visible>Window.IsVisible(tvguide)|Window.IsVisible(tvsearch)</visible>
       </item>
     </menu>
-  </extension>
-  <extension debugging="false" effectslowdown="0.75" point="xbmc.gui.skin">
-    <res aspect="16:9" default="true" folder="720p" height="720" width="1280" />
   </extension>
   <extension point="xbmc.addon.metadata">
     <language>en es de</language>
@@ -35,22 +30,19 @@
       Der Manager für TV-Wiedergabelisten stellt einen Service für Clients zur Verfügung, um Fernsehsendungen zu planen. Eine Wiedergabeliste für TV-Programme ist eine Liste von Kanalwechselbefehlen, die zu einer bestimmten Zeit stattfinden. Ein Element der Wiedergabeliste besteht aus einer Alarmzeit, einem Kanal und einer Wiederholungsoption. Der Manager verwaltet eine Datenbank mit Wiedergabelistenelementen und speichert die Liste in einer Datei. Diese Datei wird bei jedem Start des Managers gelesen, so dass laufende Ereignisse ständig ausgeführt werden.
     </description>
     <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+    <license>GNU General Public License v3.0 only, June 2007</license>
     <source>https://github.com/jmooremcc/Live_TV_Playlist</source>
     <email>jmooremcc@hotmail.com</email>
     <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-      <screenshot>resources/screenshots/screenshot000.png</screenshot>
+      <icon>ltvpl-icon.png</icon>
+      <fanart>ltvpl-fanart.jpg</fanart>
       <screenshot>resources/screenshots/screenshot001.png</screenshot>
       <screenshot>resources/screenshots/screenshot002.png</screenshot>
-      <screenshot>resources/screenshots/screenshot003.png</screenshot>
+      <screenshot>resources/screenshots/screenshot004.png</screenshot>
       <screenshot>resources/screenshots/screenshot005.png</screenshot>
-      <screenshot>resources/screenshots/screenshot006.png</screenshot>
-      <screenshot>resources/screenshots/screenshot007.png</screenshot>
-      <screenshot>resources/screenshots/screenshot008.png</screenshot>
-      <screenshot>resources/screenshots/screenshot009.png</screenshot>
-      <screenshot>resources/screenshots/screenshot010.png</screenshot>
     </assets>
   </extension>
+  <news>
+    2.0.01  July 19, 2021 - Fixed updting based on EPG changes
+  </news>
 </addon>
