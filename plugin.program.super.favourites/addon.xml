@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.super.favourites" name="Super Favourites" version="2.0.10" provider-name="jmooremcc, spoyser">
+<addon id="plugin.program.super.favourites" name="Super Favourites" version="2.0.11" provider-name="jmooremcc, spoyser">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
   </requires>
@@ -31,6 +31,9 @@
     </assets>
 
     <news>
+2.0.11: 26 August 2021
+      - Fixed bug in download module that prevented videos from being downloaded
+
 2.0.10: 6 June 2021
       - Fixed bug that prevented Hebrew language for working
 
