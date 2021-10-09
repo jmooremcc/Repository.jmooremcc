@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <addons>
-  <addon id="plugin.program.super.favourites" name="Super Favourites" version="2.0.10" provider-name="jmooremcc, spoyser">
+  <addon id="plugin.program.super.favourites" name="Super Favourites" version="2.0.11" provider-name="jmooremcc, spoyser">
     <requires>
       <import addon="xbmc.python" version="3.0.0" />
     </requires>
@@ -25,6 +25,9 @@
             <fanart>fanart.jpg</fanart>
       </assets>
         <news>
+2.0.11: 26 August 2021
+      - Fixed bug in download module that prevented videos from being downloaded
+
 2.0.10: 6 June 2021
       - Fixed bug that prevented Hebrew language for working
 
@@ -72,7 +75,7 @@
       </menu>
     </extension>
   </addon>
-  <addon id="plugin.program.super.favourites" name="Super Favourites" version="2.0.11" provider-name="jmooremcc, spoyser">
+  <addon id="plugin.program.super.favourites" name="Super Favourites" version="2.1.0" provider-name="jmooremcc, spoyser">
     <requires>
       <import addon="xbmc.python" version="3.0.0" />
     </requires>
@@ -82,9 +85,11 @@
     <extension point="xbmc.service" library="service.py" start="startup" />
     <extension point="xbmc.addon.metadata">
       <summary lang="en_GB">Put all your favourites bits of all your favourites addons into one easy to use addon.</summary>
+        <summary lang="es_ES">Ponga todas sus partes favoritas de todos sus complementos favoritos en un complemento fácil de usar.</summary>
         <description lang="en_GB">Super Favourites is a better way of managing your Kodi Favourites.[CR][CR]Virtually any menu item within Kodi can be added to Super Favourites, even from addons that don't normally provide this feature.[CR][CR]Super Favourites allows you to better manage your Kodi favourites, including the creation of sub-folders, into which your Kodi favourites can then be copied or moved into.[CR][CR]This allows you to create you own custom addon with just the best bits of your favourite addons. Search your favourite addons, play your favourite music, read your favourite comic strips, select your favourite playlists, browse your favourite movies, listen to your favourite radio stations, watch your favourite cartoons, the possibilities are endless, all from within one easy to use addon.</description>
+        <description lang="es_ES">Super Favoritos es la mejor forma de administrar sus favoritos de Kodi.[CR][CR]Prácticamente cualquier elemento de menú dentro de Kodi se puede agregar a Súper favoritos, incluso desde complementos que normalmente no brindan esta función.[CR][CR]Super Favoritos le permite administrar mejor sus favoritos de Kodi, incluída la creación de subcarpetas, en las que puede copiar o mover sus secciones o addons preferidos.[CR][CR]Esto le permite crear su propio complemento personalizado con lo mejor. Busque sus addons preferidos, reproduzca su música favorita, lea sus historias favoritas, seleccione sus listas de reproducción, explore sus películas, escuche sus estaciones de radio, vea sus dibujos animados, las posibilidades son infinitas, todos sus favoritos desde un solo uso addon, fácil de añadir.</description>
         <platform>all</platform>
-        <language>en</language>
+        <language>en es</language>
         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
         <forum>http://forum.xbmc.org/showthread.php?tid=192662</forum>
         <website />
@@ -97,6 +102,10 @@
             <fanart>fanart.jpg</fanart>
       </assets>
         <news>
+2.1.0: 9 October 2021
+      - Added Spanish Translation contributed by populc
+      - Fixed issue in player module
+
 2.0.11: 26 August 2021
       - Fixed bug in download module that prevented videos from being downloaded
 
