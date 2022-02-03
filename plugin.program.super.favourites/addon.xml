@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.super.favourites" name="Super Favourites" version="2.1.0" provider-name="jmooremcc, spoyser">
+<addon id="plugin.program.super.favourites" name="Super Favourites" version="2.2.1" provider-name="jmooremcc, spoyser">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.metahandler" optional="true" />
   </requires>
 
 
@@ -33,6 +34,14 @@
     </assets>
 
     <news>
+2.2.1 February 2022
+      - Minor Bug Fix
+
+2.2.0 December 2021
+      - Fixed Play From Here functionality
+      - Fixed handling of local folders so that back button now works correctly
+      - Added threading decorator to utils
+
 2.1.0: 9 October 2021
       - Added Spanish Translation contributed by populc
       - Fixed issue in player module
