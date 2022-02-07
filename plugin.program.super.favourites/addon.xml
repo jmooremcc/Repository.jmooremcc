@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.super.favourites" name="Super Favourites" version="2.2.2" provider-name="jmooremcc, spoyser">
+<addon id="plugin.program.super.favourites" name="Super Favourites" version="2.2.3" provider-name="jmooremcc, spoyser">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.metahandler" optional="true" />
@@ -34,6 +34,10 @@
     </assets>
 
     <news>
+2.2.3 February 2022
+      - Fix folder lock
+      - Fix name colorization
+
 2.2.1 February 2022
       - Minor Bug Fix
 
