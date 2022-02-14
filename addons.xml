@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <addons>
-  <addon id="plugin.program.super.favourites" name="Super Favourites" version="2.2.3" provider-name="jmooremcc, spoyser">
+  <addon id="plugin.program.super.favourites" name="Super Favourites" version="2.2.4" provider-name="jmooremcc, spoyser">
     <requires>
       <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.metahandler" optional="true" />
@@ -28,6 +28,9 @@
             <fanart>fanart.jpg</fanart>
       </assets>
         <news>
+2.2.4 February 2022
+      - Fix URL Playback
+
 2.2.3 February 2022
       - Fix folder lock
       - Fix name colorization
@@ -94,7 +97,7 @@
       </menu>
     </extension>
   </addon>
-  <addon id="plugin.program.super.favourites" name="Super Favourites" version="2.2.4" provider-name="jmooremcc, spoyser">
+  <addon id="plugin.program.super.favourites" name="Super Favourites" version="2.2.5" provider-name="jmooremcc, spoyser">
     <requires>
       <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.metahandler" optional="true" />
@@ -122,6 +125,9 @@
             <fanart>fanart.jpg</fanart>
       </assets>
         <news>
+2.2.5 February 2022
+      - Generic Fix for activateWindowCommand
+
 2.2.4 February 2022
       - Fix URL Playback
 
