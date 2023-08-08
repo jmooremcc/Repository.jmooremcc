@@ -1,9 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <addons>
-  <addon id="plugin.program.super.favourites" name="Super Favourites" version="2.2.5" provider-name="jmooremcc, spoyser">
+  <addon id="plugin.program.super.favourites" name="Super Favourites" version="2.3.2" provider-name="jmooremcc, spoyser">
     <requires>
       <import addon="xbmc.python" version="3.0.0" />
-        <import addon="script.module.metahandler" optional="true" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
       <provides>video audio image executable</provides>
@@ -28,6 +27,18 @@
             <fanart>fanart.jpg</fanart>
       </assets>
         <news>
+
+2.3.2 July 2023
+    -Removed metahandler from addon.xml
+    -Added new imagecache module to implement the ability to import/export custom icons.
+    -Miscellaneous bug fixes
+    -Bug fixes in imagecache module
+    -Bug fix in importer module
+
+2.2.6 April 2022
+      - Fix context menu settings bug
+      - Fix more issues with activateWindowCommand
+
 2.2.5 February 2022
       - Generic Fix for activateWindowCommand
 
@@ -87,23 +98,22 @@
       <menu id="kodi.core.main">
         <item library="capture.py">
           <label>$ADDON[plugin.program.super.favourites 30002]</label>
-                <visible>!IsEmpty(Window(Home).Property(SF_STD_CONTEXTMENU_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
+                <visible>String.IsEqual(Window(Home).Property(SF_STD_CONTEXTMENU_ENABLED),True) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
         </item>
             <item library="menu_addtofaves.py">
           <label>$ADDON[plugin.program.super.favourites 30047]</label>
-                <visible>!IsEmpty(Window(Home).Property(SF_STD_ADDTOFAVES_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
+                <visible>String.IsEqual(Window(Home).Property(SF_STD_ADDTOFAVES_ENABLED),True) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
         </item>
             <item library="menu_download.py">
           <label>$ADDON[plugin.program.super.favourites 30259]</label>
-                <visible>!IsEmpty(Window(Home).Property(SF_STD_DOWNLOAD_ENABLED)) + Player.IsInternetStream</visible>
+                <visible>String.IsEqual(Window(Home).Property(SF_STD_DOWNLOAD_ENABLED),True) + Player.IsInternetStream</visible>
         </item>
       </menu>
     </extension>
   </addon>
-  <addon id="plugin.program.super.favourites" name="Super Favourites" version="2.2.6" provider-name="jmooremcc, spoyser">
+  <addon id="plugin.program.super.favourites" name="Super Favourites" version="2.3.2" provider-name="jmooremcc, spoyser">
     <requires>
       <import addon="xbmc.python" version="3.0.0" />
-        <import addon="script.module.metahandler" optional="true" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
       <provides>video audio image executable</provides>
@@ -128,6 +138,14 @@
             <fanart>fanart.jpg</fanart>
       </assets>
         <news>
+
+2.3.2 July 2023
+    -Removed metahandler from addon.xml
+    -Added new imagecache module to implement the ability to import/export custom icons.
+    -Miscellaneous bug fixes
+    -Bug fixes in imagecache module
+    -Bug fix in importer module
+
 2.2.6 April 2022
       - Fix context menu settings bug
       - Fix more issues with activateWindowCommand
