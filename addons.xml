@@ -111,7 +111,7 @@
       </menu>
     </extension>
   </addon>
-  <addon id="plugin.program.super.favourites" name="Super Favourites" version="2.3.2" provider-name="jmooremcc, spoyser">
+  <addon id="plugin.program.super.favourites" name="Super Favourites" version="2.3.3" provider-name="jmooremcc, spoyser">
     <requires>
       <import addon="xbmc.python" version="3.0.0" />
     </requires>
