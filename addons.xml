@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <addons>
-  <addon id="plugin.program.super.favourites" name="Super Favourites" version="2.3.5" provider-name="jmooremcc, spoyser">
+  <addon id="plugin.program.super.favourites" name="Super Favourites" version="2.3.6" provider-name="jmooremcc, spoyser">
     <requires>
       <import addon="xbmc.python" version="3.0.0" />
     </requires>
@@ -27,6 +27,9 @@
             <fanart>fanart.jpg</fanart>
       </assets>
         <news>
+2.3.6 September 2023
+      -Fixed root translation bug in imagecache module
+
 2.3.5 September 2023
       -Restored util module ROOT variable back to special path
 
@@ -122,7 +125,7 @@
       </menu>
     </extension>
   </addon>
-  <addon id="plugin.program.super.favourites" name="Super Favourites" version="2.3.6" provider-name="jmooremcc, spoyser">
+  <addon id="plugin.program.super.favourites" name="Super Favourites" version="2.3.7" provider-name="jmooremcc, spoyser">
     <requires>
       <import addon="xbmc.python" version="3.0.0" />
     </requires>
@@ -149,6 +152,9 @@
             <fanart>fanart.jpg</fanart>
       </assets>
         <news>
+2.3.7 September 2023
+      -Fix reported glitch
+
 2.3.6 September 2023
       -Fixed root translation bug in imagecache module
 
