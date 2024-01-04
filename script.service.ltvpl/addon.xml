@@ -1,4 +1,4 @@
-<addon id="script.service.ltvpl" name="Live TV Playlist" provider-name="jmooremcc" version="2.0.3">
+<addon id="script.service.ltvpl" name="Live TV Playlist" provider-name="jmooremcc" version="2.0.4">
   <extension library="service.py" point="xbmc.service" />
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
@@ -43,6 +43,7 @@
     </assets>
   </extension>
   <news>
+    2.0.4   January 3, 2024 - Fix priorityqueue issue in Alarms  Manager
     2.0.2   August 4, 2021  - Fixed zombie event caused by bug in Alarm _findTimer()
                             - Sorted log alarm queue display
 
